@@ -1,0 +1,8 @@
+<div>
+  <span class="text key">{{key}}</span> :
+  <span class="text value" *ngIf="string==='true'">{{value}}</span>
+  
+  <span *ngIf="string==='false'">
+    <input [(ngModel)]="value">
+  </span>
+</div>

@@ -1,0 +1,13 @@
+<div id="container">
+  <table>
+    <td id="title">{{title}}</td>
+    <tr *ngFor='let choice of displayChoices; let i = index' >
+        <span id="choice" *ngIf='choice' (click)="toggleCheckBox(choice,i)">
+          <input type="checkbox" [checked]="choice.isChecked" />{{choice.choice}}
+        </span>
+        <div *ngIf='!choice'><br/></div>
+    </tr>
+    <tr  id="limit" *ngIf='limitText' (click)='toggleLimited()'>{{limitText}}</tr>
+    <div *ngIf='!limitText'><br/></div>
+  </table>
+</div>

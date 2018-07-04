@@ -1,0 +1,28 @@
+<div>
+  <table>
+    <tr>
+        <td>First Name</td>
+        <td><input type='text' [(ngModel)]='firstname'></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td><input type='text' [(ngModel)]='lastname'></td>
+    </tr>
+    <tr>
+        <td>username</td>
+        <td><input type='text' [(ngModel)]='username'></td>
+    </tr>
+    <tr>
+        <td>passsword</td>
+        <td><input type='text' [(ngModel)]='password'></td>
+    </tr>
+    <tr>
+        <td>e-mail</td>
+        <td><input type='text' [(ngModel)]='email'></td>
+    </tr>
+  </table>
+  <div>
+    <button type="button" (click)='signup()'>signup</button>
+    <div *ngIf='error'>{{error}}</div>
+  </div>
+</div>

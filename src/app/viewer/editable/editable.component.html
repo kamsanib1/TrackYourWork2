@@ -1,0 +1,24 @@
+<table id='container' >
+  <tr>
+    <td>
+        <table id='header'>
+            <td id='title'>{{title}}</td>
+            <td id='edit' *ngIf='!editable' (click)='enableEditing()'>edit</td>
+          </table>
+    </td>
+  </tr>  
+  <tr>
+    <td>
+      <span *ngIf='!editable' (click)='toggleContent()'>{{displayContent}}</span>
+      <div>
+          <textarea id='input' *ngIf='editable' [(ngModel)]='editableContent' (keyup)='updateContent()' (click)='resize()'></textarea>
+      </div>
+    </td>
+  </tr>
+  <tr id='inputBtns' *ngIf="editable">
+    <table>
+      <tr><td><button value="cancel" (click)="disableEditing(false)">cancel</button></td>
+      <td><button value="update" (click)="disableEditing(true)">update</button></td></tr>      
+    </table>
+  </tr>
+</table>

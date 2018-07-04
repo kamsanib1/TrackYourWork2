@@ -1,0 +1,16 @@
+#redirect{
+    width:100%;
+    border: 1px solid black;
+    background-color: rgb(114, 153, 114);
+}
+#redirect td{
+    width:90%;
+    padding: 10px;
+}
+#redirect label{
+    color:blue;
+    text-decoration-line: underline;
+    text-align: center;
+    padding: 10px;
+    
+}

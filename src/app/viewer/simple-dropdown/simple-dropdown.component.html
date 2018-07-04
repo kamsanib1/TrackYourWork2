@@ -1,0 +1,24 @@
+<span>
+  <table>
+    <thead>
+        <td id="title">
+            <span>{{title}}</span>
+        </td>
+        <td>
+            <button id="button"  (click)='switch=!switch'>{{selection}}</button>
+        </td>
+    </thead>
+    <tr>
+      <td></td>
+      <td id="item" >
+              <table *ngIf='switch'>
+                <tr class="temp" *ngFor='let item of dropList' >
+                <span (click)='update(item)'>
+                    {{item}}
+                </span>
+                </tr>
+              </table>
+      </td>
+    </tr>
+  </table>
+</span>

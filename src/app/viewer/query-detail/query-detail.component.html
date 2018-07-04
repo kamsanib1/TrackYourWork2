@@ -1,0 +1,17 @@
+<table id="container">
+  <tr>
+    <table id="top">
+        <td>{{type}}</td>
+        <td>{{topic}}</td>
+    </table>
+  </tr>
+  <tr>
+    <table id="tags">
+        <td *ngFor='let tag of tags;let i=index'>
+            <span>{{tag}}</span>
+            <span *ngIf='i!==tags.length-1'>,</span>
+            <span *ngIf='i===tags.length-1'>.</span>
+        </td>
+    </table>
+  </tr>
+</table>

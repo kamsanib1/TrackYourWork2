@@ -1,0 +1,14 @@
+.text{
+    font-size: 16px;
+    font-family: Calibri;
+    width: 100px;
+    display: inline-block;
+}
+
+.key{
+    text-align: right;
+}
+
+.value{
+    text-align: left;
+}
