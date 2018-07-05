@@ -12,6 +12,7 @@ import { QueryDetailComponent } from './query-detail/query-detail.component';
 import { QueryDisplayComponent } from './query-display/query-display.component';
 import { RedirectComponent } from './redirect/redirect.component';
 import { EditableComponent } from './editable/editable.component';
+import { QueryCoreComponent } from './query-core/query-core.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { EditableComponent } from './editable/editable.component';
     QueryDetailComponent,
     QueryDisplayComponent,
     RedirectComponent,
-    EditableComponent
+    EditableComponent,
+    QueryCoreComponent
   ],
   exports:[
     FilterViewComponent,
@@ -40,7 +42,8 @@ import { EditableComponent } from './editable/editable.component';
     QueryDetailComponent,
     QueryDisplayComponent,
     RedirectComponent,
-    EditableComponent
+    EditableComponent,
+    QueryCoreComponent
   ]
 })
 export class ViewerModule { }

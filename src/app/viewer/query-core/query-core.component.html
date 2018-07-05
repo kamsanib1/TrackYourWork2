@@ -1,0 +1,15 @@
+<div class='row'>
+  <div class='col' (click) = 'toggleExpand()'>
+    <redirect [content]='query.query' redirectUrl='bharat.com'></redirect>
+  </div>
+</div>
+<div class='row'>
+  <div class='col' (click) = 'toggleExpand()'>
+    <query-detail [type]='query.type' [topic]='query.topic' [tags]='query.tags'></query-detail>
+  </div>
+</div>
+<div class='row'>
+  <div class='col' *ngIf='expandFlag'>
+    <editable [title]='solution1'></editable>
+  </div>
+</div>

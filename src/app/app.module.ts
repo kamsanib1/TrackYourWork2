@@ -9,6 +9,7 @@ import { HomeModule } from './home/home.module';
 import { ProfileModule } from './profile/profile.module';
 import { QueryModule } from './query/query.module';
 import { HeaderFooterModule} from './header-footer/header-footer.module'
+import { RecordService } from './services/record.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import { HeaderFooterModule} from './header-footer/header-footer.module'
       {path:'**',redirectTo:'home'}
     ])
   ],
-  providers: [],
+  providers: [
+    RecordService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
