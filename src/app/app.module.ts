@@ -8,6 +8,7 @@ import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { ProfileModule } from './profile/profile.module';
 import { QueryModule } from './query/query.module';
+import { HeaderFooterModule} from './header-footer/header-footer.module'
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { QueryModule } from './query/query.module';
     HomeModule,
     ProfileModule,
     QueryModule,
+    HeaderFooterModule,
     RouterModule.forRoot([
       {path:'**',redirectTo:'home'}
     ])
