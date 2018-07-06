@@ -1,13 +1,20 @@
 <div id="container">
-  <table>
-    <td id="title">{{title}}</td>
-    <tr *ngFor='let choice of displayChoices; let i = index' >
-        <span id="choice" *ngIf='choice' (click)="toggleCheckBox(choice,i)">
-          <input type="checkbox" [checked]="choice.isChecked" />{{choice.choice}}
-        </span>
-        <div *ngIf='!choice'><br/></div>
-    </tr>
-    <tr  id="limit" *ngIf='limitText' (click)='toggleLimited()'>{{limitText}}</tr>
-    <div *ngIf='!limitText'><br/></div>
-  </table>
+    <div class = 'row'>
+        <div class='col'>
+            <label id='title'>{{title}}</label>
+        </div>
+      </div>
+        <div class='row' *ngFor='let choice of displayChoices' >
+            <div class='col-sm-1' *ngIf='choice'>
+                <input type="checkbox" [checked]="choice.isChecked" />
+            </div>
+            <div class='col-sm-10' *ngIf='choice'>{{choice.choice}}</div>
+            <div class='col'  *ngIf='!choice'><br/></div>
+        </div>
+        <div class='row'>
+            <div class='col' *ngIf='limitText' (click)='toggleLimited()'>
+              <label id='limit'>{{limitText}}</label>
+            </div>
+            <div class='col' *ngIf='!limitText'><br/></div>      
+        </div>
 </div>

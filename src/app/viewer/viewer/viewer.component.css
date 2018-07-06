@@ -1,0 +1,19 @@
+.filter-area{
+    background-color: aquamarine;
+    padding-top:15px;
+}
+.sort-area{
+    background-color: blanchedalmond;
+    min-height: 80px;
+}
+.viewer-area{
+    background-color: aqua;
+}
+.query{
+    margin:2px;
+    margin-left:5px;
+    margin-right: 5px;
+}
+.filter{
+    margin:5px;
+}

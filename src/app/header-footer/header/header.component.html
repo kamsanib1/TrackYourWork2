@@ -1,8 +1,16 @@
-<table>
-  <tr>
-    <td><button (click)='redirect("home")'>Home</button></td>
-    <td><button (click)='redirect("viewer")'>Viewer</button></td>
-    <td><button (click)='redirect("query")'>Query</button></td>
-    <td><button value='Profile' (click)='redirect("profile")'>Profile</button></td>
-  </tr>
-</table>
+
+<div class='row header'>
+  <div class='col-sm-8'>
+    <img src='../../../assets/trackyourwork logo.PNG'/>
+  </div>
+  <div class='col-sm-4 navigation'>
+      <table class=''>
+          <tr>
+            <td><button class='btn' (click)='redirect("home")'>Home</button></td>
+            <td><button class='btn' (click)='redirect("viewer")'>Viewer</button></td>
+            <td><button class='btn' (click)='redirect("query")'>Query</button></td>
+            <td><button class='btn' value='Profile' (click)='redirect("profile")'>Profile</button></td>
+          </tr>
+        </table>
+  </div>
+</div>

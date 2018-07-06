@@ -8,7 +8,8 @@ import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
 import { ProfileModule } from './profile/profile.module';
 import { QueryModule } from './query/query.module';
-import { HeaderFooterModule} from './header-footer/header-footer.module'
+import { HeaderFooterModule} from './header-footer/header-footer.module';
+import { HttpClientModule} from '@angular/common/http';
 import { RecordService } from './services/record.service';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { RecordService } from './services/record.service';
     ProfileModule,
     QueryModule,
     HeaderFooterModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path:'**',redirectTo:'home'}
     ])

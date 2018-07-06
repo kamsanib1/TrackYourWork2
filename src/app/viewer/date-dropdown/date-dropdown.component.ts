@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-date-dropdown',
+  selector: 'date-dropdown',
   templateUrl: './date-dropdown.component.html',
   styleUrls: ['./date-dropdown.component.css']
 })

@@ -1,4 +1,55 @@
+<!--empty space between header and content-->
 <div class='row'>
-  <div class='col'>
+  <div class='col' style='background-color:rgb(230, 230, 230);height:30px;'></div>
+</div>
+<!--logo and sort feilds-->
+<div class='row'>
+  <div class='col-sm-3' style='background-color:gold'></div> 
+  <div class='col-sm-9 sort-area'>
+    <div class='row'>
+      <div class='col'></div>
+      <div class='col'>
+        <span>START</span>
+        <input id="datepicker" width="276" />
+    
+      </div>
+      <div class='col'>
+          <span>END</span>
+          
+      </div>
+      <div class='col'></div>
+    </div>
+  </div>  
+</div>
+<!--filters and queries-->
+<div class='row'>
+    <div class='col-sm-3 filter-area'>
+        <div class='row'>
+          <div class='col filter'>
+            <filter-view type='tags'></filter-view>
+          </div>
+        </div>
+        <div class='row'>
+            <div class='col filter'>
+              <filter-view type='topics'></filter-view>
+            </div>
+        </div>
+      </div>
+  <div class='col-sm-9'>
+      <div class='row viewer-area'>
+        <div class='row query'>
+          <div class='row query' *ngFor='let query of queries'>
+            <div class='col query'>
+              <query-core [query]='query'></query-core>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
+
+<script>
+    $('#datepicker').datepicker({
+        uiLibrary: 'bootstrap4'
+    });
+</script>

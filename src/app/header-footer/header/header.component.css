@@ -1,0 +1,17 @@
+button{
+    width:100%;
+    
+}
+.navigation{
+    padding-top:70px;
+    align-content: center;
+    flex: right;
+}
+.header{
+    background-color: #f3fbdc;
+    align-content:center;
+}
+img{
+    max-height:120px;
+    max-width:100%;
+}

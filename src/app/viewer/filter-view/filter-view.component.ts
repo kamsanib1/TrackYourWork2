@@ -7,18 +7,18 @@ import {IfilterChoices} from '../../interfaces/ifilter-choices'
   styleUrls: ['./filter-view.component.css']
 })
 export class FilterViewComponent implements OnInit {
-  title:String;
+  title:string;
   filterChoices:IfilterChoices[];
   displayChoices:IfilterChoices[];
   limited:boolean;
-  limitText:String;
-  @Input() type:String;
+  limitText:string;
+  @Input() type:string;
 
   constructor() { }
 
   ngOnInit() {
     this.filterChoices = [];
-    if(this.type==='tags'){
+    if(this.type.toLocaleLowerCase()=='tags'){
       this.title = 'Tags';
       this.filterChoices = [
         {'choice':'easy','isChecked':false},
@@ -27,7 +27,7 @@ export class FilterViewComponent implements OnInit {
         {'choice':'poems','isChecked':false},
       ]
     }
-    else if(this.type==='topics'){
+    else if(this.type.toLocaleLowerCase()=='topics'){
       this.title = 'Topics';
       this.filterChoices = [
         {'choice':'Maths','isChecked':false},
